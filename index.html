@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>زر اشتري الآن</title>
+    <!-- أسلوب الزر وما إلى ذلك -->
+</head>
+<body>
+    <!-- نموذج المعلومات -->
+    <form id="purchaseForm" method="post" action="save_purchase.php">
+        <input type="text" name="itemName" placeholder="اسم المنتج">
+        <input type="text" name="itemPrice" placeholder="سعر المنتج">
+        <button type="submit" id="buyButton">اشتري الآن</button>
+    </form>
+
+    <h2>المعلومات السابقة:</h2>
+    <div id="previousPurchases">
+        <?php include "get_previous_purchases.php"; ?>
+    </div>
+</body>
+</html>
